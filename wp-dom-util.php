@@ -1,12 +1,6 @@
 <?php
 /**
- * A PHP DOM utility for WordPress.
- *
  * @package WP_DOM_Util
- * @author Michael Novotny <manovotny@gmail.com>
- * @license GPL-3.0+
- * @link https://github.com/manovotny/wp-dom-util
- * @copyright 2014 Michael Novotny
  *
  * @wordpress-plugin
  * Plugin Name: WP DOM Util
@@ -17,6 +11,8 @@
  * Author URI: http://manovotny.com
  * License: GPL-3.0+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ * Domain Path: /TRANSLATIONS_PATH
+ * Text Domain: TRANSLATIONS_DOMAIN
  * GitHub Plugin URI: https://github.com/manovotny/wp-dom-util
  */
 
@@ -29,11 +25,16 @@ if ( ! defined( 'WPINC' ) ) {
 
 }
 
-/* Classes
+/* Composer
 ---------------------------------------------------------------------------------- */
 
-if ( ! class_exists( 'WP_DOM_Util' ) ) {
+if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 
-    require_once __DIR__ . '/classes/class-wp-dom-util.php';
+    require_once __DIR__ . '/vendor/autoload.php';
 
 }
+
+/* Initialization
+---------------------------------------------------------------------------------- */
+
+require_once __DIR__ . '/src/initialize.php';
