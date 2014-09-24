@@ -16,11 +16,11 @@ module.exports = (function () {
             name: 'WP DOM Util',
             slug: 'wp-dom-util',
             url: 'https://github.com/manovotny/wp-dom-util',
-            version: '0.3.0'
+            version: '1.0.0'
         },
         translations: {
-            domain: 'TRANSLATIONS_DOMAIN',
-            path: 'TRANSLATIONS_PATH'
+            domain: 'wp-dom-util',
+            path: 'lang'
         }
     };
 

@@ -1,6 +1,6 @@
 {
     "name": "wp-dom-util",
-    "version": "0.3.0",
+    "version": "1.0.0",
     "description": "A PHP DOM utility for WordPress.",
     "author": "Michael Novotny <http://manovotny.com>",
     "repository": {
