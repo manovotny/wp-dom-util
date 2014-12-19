@@ -25,7 +25,7 @@ module.exports = (function () {
             slug: 'wp-dom-util',
             type: 'plugin', // Should be `plugin` or `theme`.
             url: 'https://github.com/manovotny/wp-dom-util',
-            version: '1.0.1'
+            version: '1.1.0'
         }
     };
 

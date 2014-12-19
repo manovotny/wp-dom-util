@@ -1,6 +1,6 @@
 {
     "name": "wp-dom-util",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "A PHP DOM utility for WordPress.",
     "repository": {
         "type": "git",
