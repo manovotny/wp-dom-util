@@ -1,8 +1,4 @@
 <?php
-/**
- * @package WP_DOM_Util
- * @author Michael Novotny <manovotny@gmail.com>
- */
 
 class WP_DOM_Util {
 
@@ -44,6 +40,21 @@ class WP_DOM_Util {
 
     /* Public
     ---------------------------------------------- */
+
+    /**
+     * Searches for all elements with given classname.
+     *
+     * @param $dom DOMDocument DOM Document.
+     * @param $classname string The name of the class to match on.
+     * @return DOMNodeList A new DOMNodeList object containing all the matched elements.
+     */
+    public function getElementsByClassName( $dom, $classname ) {
+
+        $finder = new DOMXPath( $dom );
+
+        return $finder->query( "//*[contains(concat(' ', normalize-space(@class), ' '), ' $classname ')]" );
+
+    }
 
     /**
      * Gets the inner HTML of a given DOMElement.
